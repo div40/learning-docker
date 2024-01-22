@@ -1,0 +1,14 @@
+
+
+#changed server to web as it is a common practice for web applications
+#volumes same as docker build command done in react-docker
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - 5173:5173
+    volumes:
+      - .:/app
+      - /app/node_modules
+
