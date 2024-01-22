@@ -13,3 +13,5 @@ Tool for defining and running multi container application
 3. .dockerignore
 
 - Then use command `docker compose up` (run as admin if permission denied error comes up)
+
+This is still not optimal developer experience as we have to rerun the container whenever any change is made to package.json
